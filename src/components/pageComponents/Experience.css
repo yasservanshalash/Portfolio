@@ -1,0 +1,15 @@
+.workDate {
+    max-width: 100px;
+    align-self: flex-start;
+    position: relative;
+    top: 10px;
+    background-color: #1876D1;
+    color: white;
+    padding: 5px;
+    margin-right: -20px;
+}
+
+.workDetails {
+    border-left: 5px solid #1876D1;
+    padding: 10px;
+}

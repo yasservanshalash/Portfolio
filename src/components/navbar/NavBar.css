@@ -1,7 +1,8 @@
 .navbar {
-    background-color: #01579b;
+    background-color: #1876D1;
   color: white;
   font-weight: 400;
+  position: sticky;
 }
 
 .navbar__links {
@@ -20,8 +21,7 @@
 }
 
 .navbar__link:hover {
-    background-color: #0080e2;
-    
+    color: black
 }
 
 h1 {

@@ -1,0 +1,88 @@
+            <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: 10}}>
+                <Typography variant='subtitle1' className='workDate'>
+                    2016 - 2016
+                </Typography>
+                <Box>
+                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className="workDetails">
+                    <strong>Junior Web Developer at ReAble</strong>
+                </Typography>
+                <Typography variant='subtitle1' sx={{flex: "1"}} className="workDetails">
+                    <ul style={{listStyleType: "none"}}>
+                        <li>Determined coding requirements for site creation, including payment and tracking capability</li>
+                        <li>Tried several online Banking and crypto currencies to match availability in the region</li>
+                        <li>Interviewed promissing candidates to help build a network of crypto traders in Beirut</li>
+                    </ul>
+                </Typography>
+                </Box>
+            </CardContent>
+            <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: 10}}>
+                <Typography variant='subtitle1' className='workDate'>
+                    201 - 2022
+                </Typography>
+                <Box>
+                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className="workDetails">
+                    <strong>Research and development at VertoPay</strong>
+                </Typography>
+                <Typography variant='subtitle1' sx={{flex: "1"}} className="workDetails">
+                    <ul style={{listStyleType: "none"}}>
+                        <li>Researched options for online pay in Lebanon</li>
+                        <li>Tried several online Banking and crypto currencies to match availability in the region</li>
+                        <li>Interviewed promissing candidates to help build a network of crypto traders in Beirut</li>
+                    </ul>
+                </Typography>
+                </Box>
+            </CardContent>
+
+
+            import { Card, CardContent, Container } from "@mui/material";
+import React from "react";
+import "./Education.css"
+const Education = () => {
+  return (
+    <Container>
+      <Card>
+        <CardContent>
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+          </table>
+        </CardContent>
+      </Card>
+    </Container>
+  );
+};
+
+export default Education;
