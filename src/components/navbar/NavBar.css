@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #01579b;
+  color: white;
+  font-weight: 400;
+}
+
+.navbar__links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px
+}
+
+
+.navbar__link {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px
+}
+
+.navbar__link:hover {
+    background-color: #0080e2;
+    
+}
+
+h1 {
+    font-weight: 400;
+}
