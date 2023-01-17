@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <div className='navbar'>
         <Container sx={{display: "flex", justifyContent: "space-between", alignItems: "center", p: 2}}>
-            <h1>My Resume</h1>
+            <h1>‎ </h1>
             <div>
                 <ul className='navbar__links'>
                 <li className='navbar__link'><HomeIcon fontSize='small'/> Home</li>

@@ -14,8 +14,12 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
+import { red } from "@mui/material/colors";
+
 import "./Profile.css";
+
 const Profile = () => {
+  const color = red[500];
   const logo = require("../../assets/yasser-profile.png");
   const [clicked, setClicked] = useState(true);
 
@@ -23,7 +27,7 @@ const Profile = () => {
     setClicked(!clicked);
   };
   return (
-    <Box sx={{ width: 400}}>
+    <Box sx={{ width: 400 }}>
       {clicked ? (
         <Card sx={{ maxWidth: 300 }}>
           <CardMedia sx={{ height: 250 }} image={logo} title="green iguana" />
@@ -32,10 +36,18 @@ const Profile = () => {
             aria-label="add"
             sx={{ position: "relative", bottom: "30px", left: "210px" }}
             onClick={clickHandler}
+            className="fab"
           >
             <MoreVertIcon />
           </Fab>
-          <CardContent sx={{ height: 70, position: "relative", bottom: 40, textAlign: "center" }}>
+          <CardContent
+            sx={{
+              height: 70,
+              position: "relative",
+              bottom: 40,
+              textAlign: "center",
+            }}
+          >
             <Typography gutterBottom variant="h5" component="div">
               Yasser Shalash
             </Typography>
@@ -47,17 +59,43 @@ const Profile = () => {
       ) : (
         <Card sx={{ maxWidth: 300 }}>
           <CardContent
-            sx={{ height: 250, display: "flex", justifyContent: "center" }}>
-            <IconButton onClick={() => window.open('http://www.facebook.com/yasservanshalash', '_blank') }>
+            sx={{ height: 250, display: "flex", justifyContent: "center" }}
+          >
+            <IconButton
+              onClick={() =>
+                window.open(
+                  "http://www.facebook.com/yasservanshalash",
+                  "_blank"
+                )
+              }
+            >
               <FacebookIcon fontSize="large" />
             </IconButton>
-            <IconButton onClick={() => window.open('https://www.instagram.com/yassershalash/', '_blank') }>
+            <IconButton
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/yassershalash/",
+                  "_blank"
+                )
+              }
+            >
               <InstagramIcon fontSize="large" />
             </IconButton>
-            <IconButton onClick={() => window.open('https://www.linkedin.com/in/yassershalash/', '_blank') }>
+            <IconButton
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/yassershalash/",
+                  "_blank"
+                )
+              }
+            >
               <LinkedInIcon fontSize="large" />
             </IconButton>
-            <IconButton onClick={() => window.open('https://twitter.com/yassershalash', '_blank') }>
+            <IconButton
+              onClick={() =>
+                window.open("https://twitter.com/yassershalash", "_blank")
+              }
+            >
               <TwitterIcon fontSize="large" />
             </IconButton>
           </CardContent>
@@ -69,7 +107,14 @@ const Profile = () => {
           >
             <MoreVertIcon />
           </Fab>
-          <CardContent sx={{ height: 70, position: "relative", bottom: 40, textAlign: "center" }}>
+          <CardContent
+            sx={{
+              height: 70,
+              position: "relative",
+              bottom: 40,
+              textAlign: "center",
+            }}
+          >
             <Typography gutterBottom variant="h5" component="div">
               Yasser Shalash
             </Typography>
