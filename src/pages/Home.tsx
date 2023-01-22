@@ -8,7 +8,8 @@ import Skills from '../components/pageComponents/Skills'
 
 const Home = ({clicked}: {clicked: boolean ;}) => {
   return (
-    <Container sx={{ mt: 4, display: "flex", justifyContent: "space-around"}}>
+    <div style={{backgroundColor: clicked? "black" : "white"}}>
+    <Container sx={{ width: "100%", height: "100%", display: "flex", justifyContent: "space-around", backgroundColor: clicked ? "black" : "white"}}>
         <Profile themeClicked={clicked}/>
         <Container sx={{maxWidth: 1000}}>
         <About />
@@ -17,6 +18,8 @@ const Home = ({clicked}: {clicked: boolean ;}) => {
         <Education />
         </Container>
     </Container>
+    </div>
+
   )
 }
 

@@ -26,11 +26,11 @@
     list-style-type: none;
     display: flex;
     gap: 30px;
-    color: black;
+    color: black;;
 }
 
 
-.navbar__link {
+.navbar__link__light {
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
@@ -38,8 +38,17 @@
     gap: 5px
 }
 
-.navbar__link:hover {
-    color: black
+
+.navbar__link__dark {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px
+}
+
+a {
+    
 }
 
 h1 {

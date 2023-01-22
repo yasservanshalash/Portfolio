@@ -1,9 +1,9 @@
-import { Button, Card, CardContent, Container, Typography } from "@mui/material";
+import { Card, CardContent, Container, Typography } from "@mui/material";
 import React from "react";
 import "./Education.css";
 const Education = () => {
   return (
-    <Container>
+    <Container sx={{mb: 2}}>
       <Card>
         <CardContent>
           <Typography variant="h6" sx={{ mb: 1, fontSize: "1.25rem" }}>
