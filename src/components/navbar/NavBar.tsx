@@ -6,12 +6,14 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import BadgeIcon from '@mui/icons-material/Badge';
 import SchoolIcon from '@mui/icons-material/School';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import Brightness5Icon from '@mui/icons-material/Brightness5';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 import "./NavBar.css"
-const NavBar = () => {
+const NavBar = ({clicked, setClicked} : {clicked: boolean, setClicked: Function}) => {
   return (
     <div className='navbar'>
-        <Container sx={{display: "flex", justifyContent: "space-between", alignItems: "center", p: 2}}>
+        <Container sx={{display: "flex", justifyContent: "space-between", alignItems: "center", p: 2, color: "black"}}>
             <h1>‎ </h1>
             <div>
                 <ul className='navbar__links'>
@@ -20,6 +22,8 @@ const NavBar = () => {
                 <li className='navbar__link'><BadgeIcon fontSize="small" /> Experience</li>
                 <li className='navbar__link'><SchoolIcon fontSize="small" /> Education</li>
                 <li className='navbar__link'><ContactMailIcon fontSize="small" /> Portfolio</li>
+                { clicked? <Brightness7Icon onClick={() => setClicked(!clicked)}/> : <Brightness5Icon onClick={() => setClicked(!clicked)}/>}
+
                 </ul>
             </div>
         </Container>

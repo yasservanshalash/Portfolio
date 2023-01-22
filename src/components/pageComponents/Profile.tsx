@@ -12,16 +12,15 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
-import { red } from "@mui/material/colors";
 
 import "./Profile.css";
 
-const Profile = () => {
-  const color = red[500];
+const Profile = ({themeClicked}: {themeClicked: boolean}) => {
   const logo = require("../../assets/yasser-profile.png");
-  const [clicked, setClicked] = useState(true);
+  const [clicked, setClicked] = useState<boolean>(true);
 
   const clickHandler = () => {
     setClicked(!clicked);
@@ -34,7 +33,9 @@ const Profile = () => {
           <Fab
             color="primary"
             aria-label="add"
-            sx={{ position: "relative", bottom: "30px", left: "210px" }}
+            sx={{ position: "relative", bottom: "30px", left: "210px", color: "inherit", backgroundColor: "inherit", "&:hover": {
+              backgroundColor: "inherit", color: "inherit"
+            },}}
             onClick={clickHandler}
             className="fab"
           >
@@ -64,10 +65,24 @@ const Profile = () => {
             <IconButton
               onClick={() =>
                 window.open(
+                  "https://github.com/yasservanshalash",
+                  "_blank"
+                )
+              }
+              disableRipple
+              sx={{color: themeClicked ? "white" : "black"}}
+            >
+              <GitHubIcon fontSize="large" />
+            </IconButton>
+            <IconButton
+              onClick={() =>
+                window.open(
                   "http://www.facebook.com/yasservanshalash",
                   "_blank"
                 )
               }
+              disableRipple
+              sx={{color: "#14A6FB"}}
             >
               <FacebookIcon fontSize="large" />
             </IconButton>
@@ -78,6 +93,8 @@ const Profile = () => {
                   "_blank"
                 )
               }
+              disableRipple
+              sx={{color: "#F60475"}}
             >
               <InstagramIcon fontSize="large" />
             </IconButton>
@@ -88,6 +105,8 @@ const Profile = () => {
                   "_blank"
                 )
               }
+              disableRipple
+              sx={{color: "#0B65C2"}}
             >
               <LinkedInIcon fontSize="large" />
             </IconButton>
@@ -95,6 +114,8 @@ const Profile = () => {
               onClick={() =>
                 window.open("https://twitter.com/yassershalash", "_blank")
               }
+              disableRipple
+              sx={{color: "#1C9BEF"}}
             >
               <TwitterIcon fontSize="large" />
             </IconButton>
@@ -102,7 +123,12 @@ const Profile = () => {
           <Fab
             color="primary"
             aria-label="add"
-            sx={{ position: "relative", bottom: "30px", left: "210px" }}
+            sx={{ position: "relative", bottom: "30px", left: "210px", backgroundColor: "inherit", color: "inherit", "&:hover": {
+              backgroundColor: "inherit", color: "inherit"
+            }, "&:active": {
+              backgroundColor: "inherit", color: "inherit"
+            },
+           }}
             onClick={clickHandler}
           >
             <MoreVertIcon />

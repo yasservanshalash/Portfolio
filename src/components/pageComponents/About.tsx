@@ -16,7 +16,7 @@ const About = () => {
           <Typography variant="h6" sx={{ mb: 1 }}>
             ABOUT ME
           </Typography>
-          <Typography variant="subtitle2" sx={{ color: "rgba(0,0,0,0.45)" }}>
+          <Typography variant="subtitle2">
             Fullstack web developer and software engineer. Enthusiastic student eager to
             learn, grow, and contribute to team success through hard work,
             attention to detail and excellent organizational skills, currently tinckering with several technologies such as JavaScript, Typescript, ReactJS with CRA/Vite and getting ready for new tech soon.
@@ -29,32 +29,32 @@ const About = () => {
           </Typography>
           <Grid container spacing={2}>
             <Grid item xs={6}>
-              <Typography variant="subtitle2" sx={{ color: "rgba(0,0,0,0.8)" }}>
+              <Typography variant="subtitle2">
                 <strong>Address: </strong>Houten, Utrecht, Netherlands
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="subtitle2" sx={{ color: "rgba(0,0,0,0.8)" }}>
+              <Typography variant="subtitle2">
                 <strong>First Language:</strong> Arabic
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="subtitle2" sx={{ color: "rgba(0,0,0,0.8)" }}>
+              <Typography variant="subtitle2">
                 <strong>Email:</strong> yasservanshalash@gmail.com
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="subtitle2" sx={{ color: "rgba(0,0,0,0.8)" }}>
+              <Typography variant="subtitle2">
                 <strong>Second Language:</strong> English
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="subtitle2" sx={{ color: "rgba(0,0,0,0.8)" }}>
+              <Typography variant="subtitle2">
                 <strong>Phone:</strong> 0685442682
               </Typography>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="subtitle2" sx={{ color: "rgba(0,0,0,0.8)" }}>
+              <Typography variant="subtitle2">
                 <strong>Third Language:</strong> Dutch
               </Typography>
             </Grid>

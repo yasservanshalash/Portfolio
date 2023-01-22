@@ -6,14 +6,14 @@ import Experience from '../components/pageComponents/Experience'
 import Profile from '../components/pageComponents/Profile'
 import Skills from '../components/pageComponents/Skills'
 
-const Home = () => {
+const Home = ({clicked}: {clicked: boolean ;}) => {
   return (
     <Container sx={{ mt: 4, display: "flex", justifyContent: "space-around"}}>
-        <Profile />
+        <Profile themeClicked={clicked}/>
         <Container sx={{maxWidth: 1000}}>
         <About />
         <Skills />
-        <Experience />
+        <Experience clicked={clicked}/>
         <Education />
         </Container>
     </Container>

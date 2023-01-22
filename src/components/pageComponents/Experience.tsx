@@ -2,7 +2,8 @@ import { Card, CardContent, Typography, Container, Grid, Box } from '@mui/materi
 import "./Experience.css"
 import React from 'react'
 
-const Experience = () => {
+const Experience = (props: {clicked: boolean ;}) => {
+    console.log(props.clicked)
   return (
     <Container sx={{ mb: 2}}>
         <Card>
@@ -12,14 +13,14 @@ const Experience = () => {
                 </Typography>
             </CardContent> 
             <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: 10}}>
-                <Typography variant='subtitle1' className='workDate'>
+                <Typography variant='subtitle1' className={ props.clicked ? "workDateLight" : "workDateDark"}>
                     2021 - 2022
                 </Typography>
                 <Box sx={{flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>
-                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className="workDetails">
+                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
                     <strong>Research and development at VertoPay</strong>
                 </Typography>
-                <Typography variant='subtitle1' sx={{flex: "1"}} className="workDetails">
+                <Typography variant='subtitle1' sx={{flex: "1"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
                     <ul style={{listStyleType: "none"}}>
                         <li>Researched options for online payments in Lebanon</li>
                         <li>Tried several online Banking and crypto currencies to match availability in the region</li>
@@ -29,14 +30,14 @@ const Experience = () => {
                 </Box>
             </CardContent>
             <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: 10}}>
-                <Typography variant='subtitle1' className='workDate'>
+                <Typography variant='subtitle1' className={ props.clicked ? "workDateLight" : "workDateDark"}>
                     2016 - 2016
                 </Typography>
                 <Box sx={{flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>
-                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className="workDetails">
+                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
                     <strong>Junior Web Developer at ReAble</strong>
                 </Typography>
-                <Typography variant='subtitle1' sx={{flex: "1"}} className="workDetails">
+                <Typography variant='subtitle1' sx={{flex: "1"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
                     <ul style={{listStyleType: "none"}}>
                         <li>Determined coding requirements for site creation, including payment and tracking capability</li>
                         <li>Tried several online Banking and crypto currencies to match availability in the region</li>
@@ -46,14 +47,14 @@ const Experience = () => {
                 </Box>
             </CardContent>
             <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: 10}}>
-                <Typography variant='subtitle1' className='workDate'>
+                <Typography variant='subtitle1' className={ props.clicked ? "workDateLight" : "workDateDark"}>
                     2014 - 2016
                 </Typography>
                 <Box sx={{flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>
-                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className="workDetails">
+                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
                     <strong>Head Cashier at Ubc, Lavabet, Lava110 Bet, Beirut</strong>
                 </Typography>
-                <Typography variant='subtitle1' sx={{flex: "1"}} className="workDetails">
+                <Typography variant='subtitle1' sx={{flex: "1"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
                     <ul style={{listStyleType: "none"}}>
                         <li>Mentored new team members on POS system operation, customer service strategies and sales goals</li>
                         <li>Worked closely with supervisors and manager to solve problems and handle customer concerns</li>

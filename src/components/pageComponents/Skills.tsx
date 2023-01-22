@@ -13,42 +13,42 @@ const Skills = () => {
             </CardContent>
             <Divider />
             <CardContent sx={{ display: "flex", alignItems: "center"}}>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} >
                 <Grid item xs={6}>
                     <Typography variant='subtitle1' sx={{ mb: 1}}>
                         HTML
                     </Typography>
-                    <LinearProgress variant="determinate" value={100} />
+                    <LinearProgress variant="determinate" value={100} color="inherit"/>
                     </Grid>
                     <Grid item xs={6}>
                     <Typography variant='subtitle1' sx={{ mb: 1}}>
                         CSS
                     </Typography>
-                    <LinearProgress variant="determinate" value={95} />
+                    <LinearProgress variant="determinate" value={95} color="inherit"/>
                     </Grid>
                     <Grid item xs={6}>
                     <Typography variant='subtitle1' sx={{ mb: 1}}>
                         Javascript
                     </Typography>
-                    <LinearProgress variant="determinate" value={95} />
+                    <LinearProgress variant="determinate" value={95} color="inherit"/>
                     </Grid>
                     <Grid item xs={6}>
                     <Typography variant='subtitle1' sx={{ mb: 1}}>
                         React
                     </Typography>
-                    <LinearProgress variant="determinate" value={100} />
+                    <LinearProgress variant="determinate" value={100} color="inherit"/>
                     </Grid>
                     <Grid item xs={6}>
                     <Typography variant='subtitle1' sx={{ mb: 1}}>
                         Typescript
                     </Typography>
-                    <LinearProgress variant="determinate" value={90} />
+                    <LinearProgress variant="determinate" value={90} color="inherit"/>
                     </Grid>
                     <Grid item xs={6}>
                     <Typography variant='subtitle1' sx={{ mb: 1}}>
                         Redux
                     </Typography>
-                    <LinearProgress variant="determinate" value={95} />
+                    <LinearProgress variant="determinate" value={95} color="inherit"/>
                     </Grid>
                 </Grid>
             </CardContent>
