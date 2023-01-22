@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import SkillsPage from "./pages/SkillsPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import EducationPage from "./pages/EducationPage";
+import PortfolioPage from "./pages/PortfolioPage";
 function App() {
   const [clicked, setClicked] = useState<boolean>(false); //theme
   // THEME
@@ -30,6 +31,10 @@ function App() {
           <Route
             path="/education"
             element={<EducationPage clicked={clicked} />}
+          />
+          <Route
+            path="/portfolio"
+            element={<PortfolioPage clicked={clicked} />}
           />
         </Routes>
       </div>
