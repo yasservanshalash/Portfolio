@@ -1,14 +1,32 @@
-.navbar {
-    background-color: inherit;
+.navbarLight {
+    width: 100%;
+    background-color: black;
   color: white;
   font-weight: 400;
   position: sticky;
 }
 
-.navbar__links {
+.navbarDark {
+    width: 100%;
+    background-color: white;
+  color: black;
+  font-weight: 400;
+  position: sticky;
+}
+
+.navbar__links__light {
     list-style-type: none;
     display: flex;
-    gap: 30px
+    gap: 30px;
+    color: white;
+}
+
+
+.navbar__links__dark {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    color: black;
 }
 
 
