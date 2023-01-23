@@ -13,6 +13,13 @@ import "./Portfolio.css";
 const Portfolio = ({ clicked }: { clicked: boolean }) => {
   const data = [
     {
+      title: "eShop group work",
+      details: "Frontend project built by assigned team in Integrify bootcamp",
+      technologies: "React, Typescript, Redux, and MUI",
+      image: "groupWork",
+      link: "https://eshop-group-work.vercel.app/"
+    },
+    {
       title: "Yummy",
       details:
         "Yummy is a basic project in react showing recipes for different foods. Manipulating data with react",

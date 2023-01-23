@@ -50,6 +50,30 @@ const Skills = () => {
                     </Typography>
                     <LinearProgress variant="determinate" value={95} color="inherit"/>
                     </Grid>
+                    <Grid item xs={6}>
+                    <Typography variant='subtitle1' sx={{ mb: 1}}>
+                        MUI
+                    </Typography>
+                    <LinearProgress variant="determinate" value={95} color="inherit"/>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <Typography variant='subtitle1' sx={{ mb: 1}}>
+                        Bootstrap
+                    </Typography>
+                    <LinearProgress variant="determinate" value={95} color="inherit"/>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <Typography variant='subtitle1' sx={{ mb: 1}}>
+                        Sass
+                    </Typography>
+                    <LinearProgress variant="determinate" value={95} color="inherit"/>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <Typography variant='subtitle1' sx={{ mb: 1}}>
+                        BEM
+                    </Typography>
+                    <LinearProgress variant="determinate" value={95} color="inherit"/>
+                    </Grid>
                 </Grid>
             </CardContent>
         </Card>
