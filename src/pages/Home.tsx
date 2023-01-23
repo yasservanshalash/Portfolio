@@ -12,7 +12,7 @@ const Home = ({clicked}: {clicked: boolean ;}) => {
 
   return (
     <div style={{backgroundColor: clicked? "black" : "white"}}>
-    <Container sx={{ width: "100%", height: "100%", display: "flex", justifyContent: "space-around", backgroundColor: clicked ? "black" : "white"}}>
+    <Container sx={{ width: "100%", height: "100%", display: "flex", justifyContent: "space-around", backgroundColor: clicked ? "black" : "white", m: "0 auto", p:0}}>
         <Profile themeClicked={clicked}/>
         <Container sx={{maxWidth: 1000}}>
         <About />

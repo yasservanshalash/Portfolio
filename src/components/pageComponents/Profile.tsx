@@ -26,7 +26,7 @@ const Profile = ({themeClicked}: {themeClicked: boolean}) => {
     setClicked(!clicked);
   };
   return (
-    <Box sx={{ width: 400 }}>
+    <Box sx={{ width: 400, display: { xs: "none", md: "block"} }}>
       {clicked ? (
         <Card sx={{ maxWidth: 300 }}>
           <CardMedia sx={{ height: 250 }} image={logo} title="green iguana" />

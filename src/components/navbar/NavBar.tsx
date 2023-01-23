@@ -22,52 +22,14 @@ const NavBar = ({
       <Container
         sx={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: { xs: "center", md: "space-between"},
           alignItems: "center",
           p: 2,
           color: "black",
         }}
       >
-        <h1>‎ </h1>
+        <Typography variant="subtitle2" sx={{display: {xs: "none", md: "block"}}}>‎ </Typography>
         <Box sx={{display: "flex", gap: 4}}>
-          {/* <ul
-            className={clicked ? "navbar__links__light" : "navbar__links__dark"}
-          >
-            <li
-              className={clicked ? "navbar__link__light" : "navbar__link__dark"}
-            >
-              <HomeIcon fontSize="small" />
-              Home
-            </li>
-            <li
-              className={clicked ? "navbar__link__light" : "navbar__link__dark"}
-            >
-              <ContentCopyIcon fontSize="small" /> Skills
-            </li>
-            <li
-              className={clicked ? "navbar__link__light" : "navbar__link__dark"}
-            >
-              <BadgeIcon fontSize="small" /> Experience
-            </li>
-            <li
-              className={clicked ? "navbar__link__light" : "navbar__link__dark"}
-            >
-              <SchoolIcon fontSize="small" /> Education
-            </li>
-            <li
-              className={clicked ? "navbar__link__light" : "navbar__link__dark"}
-            >
-              <ContactMailIcon fontSize="small" /> Portfolio
-            </li>
-            {clicked ? (
-              <Brightness7Icon
-                onClick={() => setClicked(!clicked)}
-                sx={{ color: clicked ? "white" : "black" }}
-              />
-            ) : (
-              <Brightness5Icon onClick={() => setClicked(!clicked)} />
-            )}
-          </ul> */}
           <IconButton component={Link} to="/" sx={{color: clicked? "white" : "black"}}>
           <HomeIcon fontSize="medium" />
           </IconButton>
