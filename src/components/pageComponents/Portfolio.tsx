@@ -79,7 +79,7 @@ const Portfolio = ({ clicked }: { clicked: boolean }) => {
         details:
           "Guess a number between 1 and 20, javascript",
         technologies: "JavaScript",
-        image: "drumkit",
+        image: "guessingGame",
         link: "https://yasservanshalash.github.io/guessMyNumber/",
     
     },
@@ -127,9 +127,11 @@ const Portfolio = ({ clicked }: { clicked: boolean }) => {
                 src={require("../../assets/" + item.image + ".png")}
                 className="img"
                 alt={item.title}
-                width={"762.383px"}
+                width={"600px"}
+                height={"350px"}
               />
               </a>
+              <Typography variant="subtitle2">{item.technologies}</Typography>
               <Divider />
 
             </Card>
