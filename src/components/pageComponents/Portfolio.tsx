@@ -13,6 +13,20 @@ import "./Portfolio.css";
 const Portfolio = ({ clicked }: { clicked: boolean }) => {
   const data = [
     {
+      title: "BookMe",
+      details: "Fullstack project - booking app",
+      technologies: "ReactJs, Typescript, redux, MUI, MongoDB, mongoose, PassportJs",
+      image: "bookme",
+      link: "https://bookme-m0zg.onrender.com/"
+    },
+    {
+      title: "Betsy",
+      details: "Fullstack project - ecommerce",
+      technologies: "ReactJs, Typescript, redux, MUI, MongoDB, mongoose, PassportJs",
+      image: "betsy",
+      link: "https://betsy-frontend.onrender.com/"
+    },
+    {
       title: "eShop group work",
       details: "Frontend project built by assigned team in Integrify bootcamp",
       technologies: "React, Typescript, Redux, and MUI",
