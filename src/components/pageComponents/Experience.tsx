@@ -14,6 +14,23 @@ const Experience = (props: {clicked: boolean ;}) => {
             </CardContent> 
             <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: 10}}>
                 <Typography variant='subtitle1' className={ props.clicked ? "workDateLight" : "workDateDark"}>
+                    2022 - 2023
+                </Typography>
+                <Box sx={{flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>
+                <Typography variant='subtitle1' sx={{flex: "1", fontSize: "larger"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
+                    <strong>Trainee at Integrify</strong>
+                </Typography>
+                <Typography variant='subtitle1' sx={{flex: "1"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
+                    <ul style={{listStyleType: "none"}}>
+                        <li>Learned cutting edge technologies that're popular in the programming world</li>
+                        <li>Built several frontend and fullstack projects</li>
+                        <li>Led teammates on seperate occasions during projects and tutored other trainees</li>
+                    </ul>
+                </Typography>
+                </Box>
+            </CardContent>
+            <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: 10}}>
+                <Typography variant='subtitle1' className={ props.clicked ? "workDateLight" : "workDateDark"}>
                     2021 - 2022
                 </Typography>
                 <Box sx={{flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start"}}>

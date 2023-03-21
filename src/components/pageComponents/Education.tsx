@@ -19,7 +19,7 @@ const Education = () => {
               <td>2022 - 2023</td>
             </tr>
             <tr>
-              <td>TechStars</td>
+              <td>TechStars Barcleys Accelerator - Cape Town 2016</td>
               <td>2016</td>
             </tr>
             <tr>

@@ -1,4 +1,4 @@
-import { Box, Container, IconButton, Typography } from "@mui/material";
+import { Box, Container, IconButton, Tooltip, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
@@ -30,21 +30,31 @@ const NavBar = ({
       >
         <Typography variant="subtitle2" sx={{display: {xs: "none", md: "block"}}}>‎ </Typography>
         <Box sx={{display: "flex", gap: 4}}>
+        <Tooltip title="Home">
           <IconButton component={Link} to="/" sx={{color: clicked? "white" : "black"}}>
           <HomeIcon fontSize="medium" />
           </IconButton>
+          </Tooltip>
+          <Tooltip title="Professional skills">
           <IconButton component={Link} to="/skills" sx={{color: clicked? "white" : "black"}}>
           <ContentCopyIcon fontSize="medium" />
           </IconButton>
+          </Tooltip>
+          <Tooltip title="Experience">
           <IconButton component={Link} to="/experience" sx={{color: clicked? "white" : "black"}}>
           <BadgeIcon fontSize="medium" />
           </IconButton>
+          </Tooltip>
+          <Tooltip title="Education">
           <IconButton component={Link} to="/education" sx={{color: clicked? "white" : "black"}}>
           <SchoolIcon fontSize="medium" />
           </IconButton>
+          </Tooltip>
+          <Tooltip title="Portfolio">
           <IconButton component={Link} to="/portfolio" sx={{color: clicked? "white" : "black"}}>
           <ContactMailIcon fontSize="medium" />
           </IconButton>
+          </Tooltip>
           <IconButton>
           {clicked ? (
               <Brightness7Icon
