@@ -56,9 +56,12 @@ const Experience = (props: {clicked: boolean ;}) => {
                 </Typography>
                 <Typography variant='subtitle1' sx={{flex: "1"}} className={props.clicked ? "workDetailsLight" : "workDetailsDark"}>
                     <ul style={{listStyleType: "none"}}>
-                        <li>Determined coding requirements for site creation, including payment and tracking capability</li>
-                        <li>Tried several online Banking and crypto currencies to match availability in the region</li>
-                        <li>Interviewed promissing candidates to help build a network of crypto traders in Beirut</li>
+                        <li>Tested websites and performed troubleshooting prior to deployment.
+</li>
+                        <li>Analyzed requirements and designed, developed and implemented multiple websites.
+</li>
+                        <li>Fed OCR (optical character recognition) and trained it to make it read better.
+</li>
                     </ul>
                 </Typography>
                 </Box>
