@@ -15,14 +15,14 @@ const Portfolio = ({ clicked }: { clicked: boolean }) => {
     {
       title: "BookMe",
       details: "Fullstack project - booking app",
-      technologies: "ReactJs, Typescript, redux, MUI, MongoDB, mongoose, PassportJs",
+      technologies: "ReactJs, Typescript, redux, MUI, MongoDB, mongoose, PassportJs (Server might be down)",
       image: "bookme",
       link: "https://bookme-m0zg.onrender.com/"
     },
     {
       title: "Betsy",
       details: "Fullstack project - ecommerce",
-      technologies: "ReactJs, Typescript, redux, MUI, MongoDB, mongoose, PassportJs",
+      technologies: "ReactJs, Typescript, redux, MUI, MongoDB, mongoose, PassportJs (Server might be down)",
       image: "betsy",
       link: "https://betsy-frontend.onrender.com/"
     },
